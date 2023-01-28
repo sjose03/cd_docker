@@ -1,5 +1,12 @@
 pipeline {
     agent { docker { image cd_docker/hello } }
+      stages {
+        stage('log version info') {
+      steps {
+        echo 'Rodei'
+      }
+    }
+  }
 }
    post {
     success 
